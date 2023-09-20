@@ -1224,3 +1224,7 @@ class ParameterizedProtocolType(Type):
 
 class AbiSafeConversionExpr(ImplicitConversionExpr):
     pass
+
+
+class SingleValueStmtExpr(Expr):
+    stmt: Stmt | child
